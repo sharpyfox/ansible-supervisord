@@ -65,6 +65,7 @@
     - conf
     - supervisor
     - supervisord
+  when: ansible_os_family != 'RedHat'
 
 - name: Add supervisord to init
   sudo: yes
